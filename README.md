@@ -40,8 +40,9 @@ You can also inspect basic server details with:
 $pi.Name
 $pi.ServerVersion
 ```
+---
 
-## $pi Object
+## PIServer Object ($pi)
 
 After running:
 
@@ -64,6 +65,8 @@ The $pi object provides access to:
 - Methods to read recorded values
 - Server-level configuration and metadata
 
+---
+
 ### Example usage:
 
 ```powershell
@@ -74,6 +77,19 @@ $pi.ServerVersion
 # Searching for a PI tag:
 $pt = [OSIsoft.AF.PI.PIPoint]::FindPIPoint($pi, "sinusoid")
 ```
+---
+
+## Learning Context
+
+This repository was created as a personal learning project while working through the AVEVA PI System Developer learning path.
+
+The goal is to better understand PowerShell scripting patterns for interacting with the AVEVA / OSIsoft PI System using the AFSDK API, including PI Data Archive connections, Asset Framework concepts, and common automation workflows used in industrial environments.
+
+All examples use generic server names and publicly documented APIs.  
+The repository contains only personal learning material and does **not** include proprietary systems, data, or internal company information.
+
+---
+
 ## License
 
 MIT License
