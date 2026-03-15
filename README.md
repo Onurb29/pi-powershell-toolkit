@@ -73,10 +73,7 @@ $pi.ServerVersion
 
 # Searching for a PI tag:
 $pt = [OSIsoft.AF.PI.PIPoint]::FindPIPoint($pi, "sinusoid")
-
+```
 ## License
 
 MIT License
-
-
-```
